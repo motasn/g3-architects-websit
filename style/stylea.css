@@ -5,9 +5,11 @@
 * {
     font-family: "Work Sans", sans-serif;
 }
-.p-text{
+
+.p-text {
     color: #727272;
 }
+
 .section-titel {
     color: #131313;
     font-weight: 700;
@@ -78,7 +80,7 @@ nav li a {
 main {
     max-width: 1440px;
     margin: 70px auto;
-   
+
 }
 
 /* teams-section style */
@@ -86,6 +88,7 @@ main {
     display: flex;
     align-items: center;
 }
+
 .teams-img-contanner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -97,60 +100,131 @@ main {
     height: 342px;
     border-radius: 8px;
 }
-.teams-text-contanner{
+
+.teams-text-contanner {
     padding-left: 70px;
     padding-right: 70px;
-    
+
 }
 
-.teams-text-titel{
+.teams-text-titel {
     font-size: 2.3rem;
 }
-.teams-text-titel .quick-list{
+
+.teams-text-titel .quick-list {
     color: #727272;
     font-weight: 500;
 }
-.teams-text-titel .titel-Features{
+
+.teams-text-titel .titel-Features {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* Feature style */
+.Feature {
+    margin-top: 120px;
+    display: flex;
+    gap: 90px;
+    ;
+}
+.Feature .section-titel{
+    border-left:5px solid #FF900E;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.feature-contaner-text .card {
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+.feature-contaner-img img{
+    height: 90%;
+    margin-left: 100px;
+
+}
+.ten-year{
+    width: 342px;
+border-radius: 8px;
+background: #FF900E;
+text-align: center;
+color: #FFF;
+padding: 40px; 
+position: relative;
+bottom:100px ;
+}
+.ten-year h3{
+    font-weight: 700;
+    font-size: 4rem;
+    margin:0 ;
+}
+.ten-year{
+font-size: 1.5rem;
+font-weight: 500;
+line-height: 40px;
+}
 /* fact section */
-.fact-card-contaner{
+.fact-card-contaner {
     display: flex;
     justify-content: space-around;
 }
-.fact-card-contaner .card{
+
+.fact-card-contaner .card {
     border-radius: 8px;
-border: 1px solid #FF900E;
-text-align: center;
-padding:  30px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
 }
-.fact-card-contaner .card-title{
+
+.fact-card-contaner .card-title {
     font-weight: 600;
-    font-size:1.4rem ;
+    font-size: 1.4rem;
     margin-top: 5px;
 }
-.fact-card-contaner .card-stats{
+
+.fact-card-contaner .card-stats {
     color: #424242;
-    font-size:2.5rem ;
-    margin-top:10px ;
+    font-size: 2.5rem;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /* Sponspors style */
-.Sponspors-contaner{
+.Sponspors-contaner {
     text-align: center;
 }
-.sponspor-img{
+
+.sponspor-img {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
 }
-.sponspor-img img{
+
+.sponspor-img img {
     width: 165px;
+}
+/* footer */
+footer {
+    border-radius: 8px;
+background: #FFF4E7;
+margin-bottom: 20px;
+text-align: center;
+margin: 240px;
+align-items: center;
+padding:20px 60px ;
+}
+footer .footer-text{
+    width:800px ;
+    height:100px ;
+    padding-top: 80px;
+   
 }
 
 /* Resposive media quary */
@@ -161,20 +235,36 @@ padding:  30px;
         padding: 10px;
     }
 
-    nav, .fact-card-contaner, .sponspor-img{
+    nav,
+    .fact-card-contaner,
+    .sponspor-img ,.Feature{
         flex-direction: column;
     }
-    .teams-contanner{
+
+    .teams-contanner {
         flex-direction: column-reverse;
     }
+
     .teams-img-contanner {
         grid-template-columns: 1fr;
     }
-    .teams-text-contanner,.fact-card-contaner, .sponspor-img{
+
+    .teams-text-contanner,
+    .fact-card-contaner,
+    .sponspor-img {
         padding-left: 20px;
-    padding-right: 20px;
+        padding-right: 20px;
     }
-    .fact-card-contaner{
+    .feature-contaner-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-year{
+        position: static;
+       max-width:250px;
+    
+    }
+    .fact-card-contaner {
         gap: 20px;
     }
 }
@@ -185,10 +275,15 @@ padding:  30px;
         padding: 40px;
     }
 
-    nav,.sponspor-img, .teams-contanner{
+    nav,
+    .sponspor-img,
+    .teams-contanner,.Feature {
         flex-direction: column;
     }
-    .fact-card-contaner{
+
+    .fact-card-contaner {
         gap: 7px;
     }
 }
+
+
