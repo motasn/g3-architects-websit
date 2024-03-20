@@ -55,7 +55,7 @@ nav li a {
 
 /* banner style */
 .banner-contaner {
-    max-width:700px ;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
@@ -70,28 +70,77 @@ nav li a {
     color: #727272;
 }
 
-.banner img{
+.banner img {
     width: 100%;
+
 }
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+   
+}
+
+/* teams-section style */
+.teams-contanner {
+    display: flex;
+    align-items: center;
+}
+.teams-img-contanner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+}
+
+.teams-img-contanner img {
+    width: 342px;
+    height: 342px;
+    border-radius: 8px;
+}
+.teams-text-contanner{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+.teams-text-titel{
+    font-size: 2.3rem;
+}
+.teams-text-titel .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-text-titel .titel-Features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
 
 /* Resposive media quary */
 
 /* mobile device  */
 @media screen and (max-width:576px) {
-    header{
-        padding:10px ;
+    header {
+        padding: 10px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
 
 /* tablet or medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding:40px ;
+    header {
+        padding: 40px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
