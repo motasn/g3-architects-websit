@@ -5,6 +5,9 @@
 * {
     font-family: "Work Sans", sans-serif;
 }
+.p-text{
+    color: #727272;
+}
 
 .btn-pramriy {
     color: #FFF;
@@ -66,10 +69,6 @@ nav li a {
     font-weight: 700;
 }
 
-.banner-descriptino {
-    color: #727272;
-}
-
 .banner img {
     width: 100%;
 
@@ -129,8 +128,18 @@ main {
         padding: 10px;
     }
 
-    nav {
+    nav{
         flex-direction: column;
+    }
+    .teams-contanner{
+        flex-direction: column-reverse;
+    }
+    .teams-img-contanner {
+        grid-template-columns: 1fr;
+    }
+    .teams-text-contanner{
+        padding-left: 20px;
+    padding-right: 20px;
     }
 }
 
@@ -141,6 +150,9 @@ main {
     }
 
     nav {
+        flex-direction: column;
+    }
+    .teams-contanner{
         flex-direction: column;
     }
 }
