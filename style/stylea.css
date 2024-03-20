@@ -8,6 +8,11 @@
 .p-text{
     color: #727272;
 }
+.section-titel {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2rem;
+}
 
 .btn-pramriy {
     color: #FFF;
@@ -33,11 +38,6 @@ nav {
     align-items: center;
 }
 
-.nav-titel {
-    color: #131313;
-    font-weight: 700;
-    font-size: 2rem;
-}
 
 nav>ul {
     display: flex;
