@@ -213,18 +213,20 @@ line-height: 40px;
 /* footer */
 footer {
     border-radius: 8px;
-background: #FFF4E7;
-margin-bottom: 20px;
-text-align: center;
-margin: 240px;
-align-items: center;
-padding:20px 60px ;
-}
+    background: #FFF4E7;
+        text-align: center;
+        margin: 40px 250px ;
+      
+
+justify-content: space-around;
+    }
+    
 footer .footer-text{
-    width:800px ;
-    height:100px ;
-    padding-top: 80px;
-   
+   padding:30px ;
+   color: #424242;
+text-align: center;
+font-size: 1.4rem;
+font-weight: 400;  
 }
 
 /* Resposive media quary */
@@ -267,6 +269,11 @@ footer .footer-text{
     .fact-card-contaner {
         gap: 20px;
     }
+    footer{
+        margin:5px ;
+    }
+   
+    
 }
 
 /* tablet or medium device */
